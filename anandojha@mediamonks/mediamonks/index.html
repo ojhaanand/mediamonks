@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>mediamonks</title>
+</head>
+<body>
+    <div class="wrapper">        
+        <div id="logo">
+            <div class="prev" onclick="plusslides(1)">&#10094;</div>
+            <img src="/img/logo.svg" alt="">
+            
+            <div class="next" onclick="plusslides(1)">&#10095;</div>
+            
+        </div>
+        <!--slider section-->
+        <div class="slider" >
+             
+             <div class="myslide roll active" >
+                <img src="img/smuff.jpg" alt="">
+                
+            </div>
+            <div class="myslide roll">
+                <img src="img/media.jpg" alt="">
+                
+            </div>
+            <div class="myslide roll" >
+                <img src="img/media2.jpg" alt="">
+                
+            </div>
+            <div class="myslide roll" >
+                <img src="img/media3.jpg" alt="">
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="dotbox" style="text-align: center;">
+            <span class="dot active" onclick="currentslide(1)"></span>
+            <span class="dot" onclick="currentslide(2)"></span>
+            <span class="dot" onclick="currentslide(3)"></span>
+            <span class="dot"onclick="currentslide(4"></span>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

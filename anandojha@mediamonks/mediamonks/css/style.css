@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin-left: 10px;
+}
+.wrapper{
+    background-color: none;
+}
+
+/**header section**/
+#logo{
+    width: 300px;
+    height: 65px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: 2px solid black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#logo img{
+    width: 300px;
+    height: 65px;
+    
+    max-width: 100% !important;
+    object-fit: cover;
+
+
+
+}
+/**slider section**/
+.slider{
+      position: absolute;
+      width: 300px;
+      
+
+}
+.myslide img{
+    width: 297px;
+    height: 187px;
+    display: block;
+    object-fit: cover;
+    
+}
+
+.myslide{
+      width: 300px;
+      display: none;
+      border: 2px solid black;
+      
+    
+}
+
+.slider .myslide.active{
+    display: block;
+}
+
+
+.prev{
+   background:none;
+   border: 3px solid black;
+   border-radius: 65%;
+   cursor: pointer;
+    
+
+}
+
+.next{
+   background-color: none;
+   border-radius: 50%;
+   border: 3px solid black;
+   cursor: pointer;
+}
+
+.prev:hover, .next:hover{
+    background-color: blue;
+}
+.dotbox{
+    position: relative;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    padding: auto;
+    bottom: 20px;
+    cursor: pointer;
+    top: 175px;
+    
+}
+
+.dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0px 2px;
+    
+    top: 100%;
+    color:black;
+    
+}
+
+roll{
+    -webkit-animation-name:fadeinout 4s linear forwards;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeinout 4s linear forwards;
+    animation-duration: 1.5s;
+    width: 300px;
+    height: 185px;
+    background-color: red;
+    opacity: 0;
+
+}
+
+@-webkit-keyframes fadeinout{
+    50%{opacity: 1;}
+}
+@keyframes fadeinout{
+    50%{opacity: 1;}
+}
+
+
+
+
